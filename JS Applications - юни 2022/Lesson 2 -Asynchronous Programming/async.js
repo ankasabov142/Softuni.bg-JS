@@ -1,8 +1,8 @@
-let e=document.getElementById('button')
-e.addEventListener("click", myFunction);
+let e=document.getElementById('button');
+e.addEventListener('click',onclick)
 
-function myFunction(){
-    const promise=fetch("https://swapi.dev/api/people/1");
-    console.log(promise);
-    promise.then(res => console.log(res))
+function onclick() {
+  fetch("https://swapi.dev/api/people")
+    .then(res => res.json())
+    .then(data => document.getElementById("text").value= JSON.stringify(data,null,2))
 }
