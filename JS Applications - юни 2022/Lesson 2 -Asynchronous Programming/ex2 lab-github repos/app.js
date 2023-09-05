@@ -26,7 +26,7 @@ throw new Error();
     }
 	readData(url);
   } catch {
-    alert("404 “Not Found”");
+    alert("404 “Not Found!”");
   }
 
   
