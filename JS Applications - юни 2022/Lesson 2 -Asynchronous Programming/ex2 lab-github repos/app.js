@@ -28,7 +28,5 @@ throw new Error();
   } catch {
     alert("404 “Not Found!”");
   }
-
-  
   //display response data
 }
