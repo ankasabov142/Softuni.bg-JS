@@ -1,14 +1,14 @@
-JS Syntax Fundamentals – Exercises
+JS Syntax Fundamentals - Exercises
 Problems with exercise and homework for the "JS Front-End" Course @ SoftUni. 
-    1. Ages
+1. Ages
 Write a function that determines whether based on the given age a person is: baby, child, teenager, adult, elder.
 The input comes as a single number parameter. The bounders are:
-    • 0-2 (age) – is a baby;   
-    • 3-13 (age) – is a child; 
-    • 14-19 (age) – is a teenager;
-    • 20-65 (age) – is an adult;
-    • >=66 (age) – is an elder; 
-    • In all other cases print – "out of bounds";
+* 0-2 (age) - is a baby;   
+* 3-13 (age) - is a child; 
+* 14-19 (age) - is a teenager;
+* 20-65 (age) - is an adult;
+* >=66 (age) - is an elder; 
+* In all other cases print - "out of bounds";
 The output should be printed to the console.
 Examples
 Input
@@ -21,7 +21,7 @@ baby
 elder
 -1
 out of bounds
-    2. Vacation
+2. Vacation
 You are given a group of people, the type of the group, and the day of the week they are going to stay. Based on that information calculate how much they have to pay and print that price on the console. Use the table below. In each cell is the price for a single person. 
 The output should look like that: `Total price: {price}`. The price should be formatted to the second decimal point.
 
@@ -40,11 +40,10 @@ Regular
 15
 20
 22.50
-
 There are also discounts based on some conditions:
-    • Students – if the group is bigger than or equal to 30 people you should reduce the total price by 15%
-    • Business – if the group is bigger than or equal to 100 people 10 of them can stay for free
-    • Regular – if the group is bigger than or equal to 10 and less than or equal to 20 reduce the total price by 5%
+* Students - if the group is bigger than or equal to 30 people you should reduce the total price by 15%
+* Business - if the group is bigger than or equal to 100 people 10 of them can stay for free
+* Regular - if the group is bigger than or equal to 10 and less than or equal to 20 reduce the total price by 5%
 Note: You should reduce the prices in that EXACT order.
 Examples
 Input
@@ -57,10 +56,10 @@ Total price: 266.73
 "Regular",
 "Saturday"
 Total price: 800.00
-    3. Leap Year
+3. Leap Year
 Write a JS function to check whether a year is a leap. Leap years are either divisible by 4 but not by 100 or are divisible by 400. The output should be following:
-    • If the year is a leap, print: "yes"
-    • Otherwise, print: "no"
+* If the year is a leap, print: "yes"
+* Otherwise, print: "no"
 Examples
 Input
 Output
@@ -70,7 +69,7 @@ yes
 no
 4
 yes
-    4. Print and Sum
+4. Print and Sum
 Write a function that displays numbers from given start to given end and their sum. The input comes as two number parameters. Print the result like the examples below:
 Examples
 Input
@@ -79,18 +78,18 @@ Output
 5 6 7 8 9 10
 Sum: 45
 0, 26
-0 1 2 … 26
+0 1 2 ... 26
 Sum: 351
 50, 60
 50 51 52 53 54 55 56 57 58 59 60
 Sum: 605
-    5. Multiplication Table
+5. Multiplication Table
 You will receive a number as a parameter. Print the 10 times table for this number. See the examples below for more information.
 Output
 Print every row of the table in the following format:
 {number} X {times} = {product}
 Constraints
-    • The number will be an integer will be in the interval [1…100]
+* The number will be an integer will be in the interval [1...100]
 Examples
 Input
 Output
@@ -119,8 +118,8 @@ Output
 2 X 7 = 14
 2 X 8 = 16
 2 X 9 = 18
-    2 X 10 = 20
-    6. Sum Digits
+2 X 10 = 20
+6. Sum Digits
 Write a function, which will be given a single number. Your task is to find the sum of its digits.
 Examples
 Input
@@ -131,7 +130,7 @@ Output
 28
 543
 12
-    7. Chars to String
+7. Chars to String
 Write a function, which receives 3 parameters. Each parameter is a single character. Combine all the characters into one string and print it on the console.
 Examples
 Input
@@ -148,7 +147,7 @@ abc
 '5',
 'p'
 15p
-    8. Reversed Chars
+8. Reversed Chars
 Write a program that takes 3 parameters (characters) and prints them in reversed order with a space between them.
 Examples
 Input
@@ -161,7 +160,7 @@ C B A
 'L',
 '&'
 & L 1
-    9. Fruit
+9. Fruit
 Write a function that calculates how much money you need to buy fruit. You will receive a string for the type of fruit you want to buy, a number for weight in grams, and another number for the price per kilogram. 
 Print the following text on the console:  
 `I need ${money} to buy {weight} kilograms {fruit}.`
@@ -173,12 +172,11 @@ Input
 Output
 'orange', 2500, 1.80
 I need $4.50 to buy 2.50 kilograms orange.
-
 Input
 Output
 'apple', 1563, 2.35
 I need $3.67 to buy 1.56 kilograms apple.
-    10. Same Numbers
+10. Same Numbers
 Write a function that takes an integer number as an input and check if all the digits in a given number are the same or not.
 Print on the console true if all numbers are the same and false if not. On the next line print the sum of all digits.
 The input comes as an integer number.
@@ -196,13 +194,12 @@ true
 1234
 false
 10
-
-    11. Road Radar
+11. Road Radar
 Write a function that determines whether a driver is within the speed limit. You will receive the speed and the area. Each area has a different limit: 
-    • On the motorway, the limit is 130 km/h
-    • On the interstate, the limit is 90 km/h
-    • In the city, the limit is 50 km/h 
-    • Within a residential area, the limit is 20 km/h
+* On the motorway, the limit is 130 km/h
+* On the interstate, the limit is 90 km/h
+* In the city, the limit is 50 km/h 
+* Within a residential area, the limit is 20 km/h
 If the driver is within the limits, there should be a printed speed and the speed limit. 
                 `Driving {speed} km/h in a {speed limit} zone`
 If the driver is over the limit, however, your function should print the severity of the infraction and the difference in speeds. 
@@ -223,13 +220,13 @@ The speed is 1 km/h faster than the allowed speed of 20 - speeding
 The speed is 30 km/h faster than the allowed speed of 90 - excessive speeding
 200, 'motorway'
 The speed is 70 km/h faster than the allowed speed of 130 - reckless driving
-    12. Cooking by Numbers
+12. Cooking by Numbers
 Write a program that receives 6 parameters which are a number and a list of five operations. Perform the operations sequentially by starting with the input number and using the result of every operation as a starting point for the next one. Print the result of every operation in order. The operations can be one of the following:
-    • chop - divide the number by two
-    • dice - square root of a number
-    • spice - add 1 to the number
-    • bake - multiply number by 3
-    • fillet - subtract 20% from the number
+* chop - divide the number by two
+* dice - square root of a number
+* spice - add 1 to the number
+* bake - multiply number by 3
+* fillet - subtract 20% from the number
 The input comes as 6 string elements. The first element is the starting point and must be parsed to a number. The remaining 5 elements are the names of the operations to be performed.
 The output should be printed on the console.
 Examples
@@ -241,7 +238,6 @@ Output
 4
 2
 1
-
 Input
 Output
 '9', 'dice', 'spice', 'chop', 'bake', 'fillet'
@@ -250,3 +246,7 @@ Output
 2
 6
 4.8
+
+
+
+
